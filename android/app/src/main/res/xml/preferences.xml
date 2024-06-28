@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        app:key="category_general"
+        app:title="@string/preferences_category_title_general">
+        <Preference
+            app:key="registered_hosts"
+            tools:summary="@string/preferences_registered_hosts_summary"
+            app:summary=" "
+            app:title="@string/preferences_registered_hosts_title"
+            app:fragment="com.metallic.chiaki.settings.SettingsRegisteredHostsFragment"
+            app:icon="@drawable/ic_console_simple"/>
+
+        <SwitchPreference
+            app:key="@string/preferences_swap_cross_moon_key"
+            app:title="@string/preferences_swap_cross_moon_title"
+            app:summary="@string/preferences_swap_cross_moon_summary"
+            app:icon="@drawable/ic_gamepad" />
+
+        <SwitchPreference
+            app:key="@string/preferences_rumble_enabled_key"
+            app:title="@string/preferences_rumble_enabled_title"
+            app:summary="@string/preferences_rumble_enabled_summary"
+            app:icon="@drawable/ic_rumble" />
+
+        <SwitchPreference
+            android:dependency="@string/preferences_rumble_enabled_key"
+            app:key="@string/preferences_rumble_gamepad_enabled_key"
+            app:title="使用手柄震动马达"
+            app:summary="如果手柄不支持震动则使用默认手机震动马达。
+            \n建议PS4游戏开启，PS5游戏关闭，使用系统输入法里面的重定向功能使手柄震动。"
+            app:icon="@drawable/icon_virtual_controller" />
+
+        <SwitchPreference
+            app:key="@string/preferences_motion_enabled_key"
+            app:title="@string/preferences_motion_enabled_title"
+            app:summary="@string/preferences_motion_enabled_summary"
+            app:icon="@drawable/ic_motion" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            app:key="@string/preferences_on_screen_controls_enabled_key"
+            app:title="@string/preferences_on_screen_controls_enabled_title"
+            app:summary="@string/preferences_on_screen_controls_enabled_summary"
+            app:icon="@drawable/icon_virtual_controller" />
+
+        <SwitchPreference
+            android:dependency="@string/preferences_on_screen_controls_enabled_key"
+            app:key="@string/preferences_touchpad_only_enabled_key"
+            app:title="@string/preferences_touchpad_only_enabled_title"
+            app:summary="@string/preferences_touchpad_only_enabled_summary"
+            app:icon="@drawable/icon_touch_tap" />
+
+        <SwitchPreference
+            android:dependency="@string/preferences_on_screen_controls_enabled_key"
+            app:key="@string/preferences_button_haptic_enabled_key"
+            app:title="@string/preferences_button_haptic_enabled_title"
+            app:summary="@string/preferences_button_haptic_enabled_summary"
+            app:icon="@drawable/ic_button_haptic" />
+
+
+        <SwitchPreference
+            app:key="@string/preferences_log_verbose_key"
+            app:title="@string/preferences_log_verbose_title"
+            app:summary="@string/preferences_log_verbose_summary"
+            app:icon="@drawable/ic_log" />
+
+        <Preference
+            app:key="logs"
+            app:summary="@string/preferences_logs_summary"
+            app:title="@string/preferences_logs_title"
+            app:fragment="com.metallic.chiaki.settings.SettingsLogsFragment"
+            app:icon="@drawable/ic_log"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="category_stream"
+        app:title="@string/preferences_category_title_stream">
+        <ListPreference
+            app:key="@string/preferences_resolution_key"
+            app:title="@string/preferences_resolution_title"
+            app:summary="%s"
+            app:icon="@drawable/ic_resolution"/>
+
+        <ListPreference
+            app:key="@string/preferences_fps_key"
+            app:title="@string/preferences_fps_title"
+            app:summary="%s"
+            app:icon="@drawable/ic_fps"/>
+
+        <EditTextPreference
+            app:key="@string/preferences_bitrate_key"
+            app:title="@string/preferences_bitrate_title"
+            app:icon="@drawable/ic_bitrate"/>
+
+        <ListPreference
+            app:key="@string/preferences_codec_key"
+            app:title="@string/preferences_codec_title"
+            app:summary="%s"
+            app:icon="@drawable/ic_codec"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="category_axi"
+        app:title="阿西西的日常">
+
+        <SwitchPreference
+            app:key="@string/preferences_screen_portrait_enabled_key"
+            app:title="强制竖屏显示画面"
+            app:summary="默认横屏显示，此选项可竖屏显示，会空余一半空间放置虚拟按钮。"
+            app:icon="@drawable/icon_setting_portal" />
+
+        <SwitchPreference
+            app:key="@string/preferences_screen_cutoutmode_enabled_key"
+            app:title="填充刘海区域"
+            app:summary="默认不填充屏幕刘海区域\n(Android 9及以上)"
+            app:icon="@drawable/icon_setting_cutout_mode" />
+
+        <ListPreference
+            app:key="@string/preferences_touch_key_enabled_key"
+            app:title="@string/preferences_touch_key_enabled_title"
+            app:summary="@string/preferences_touch_key_enabled_summary"
+            android:entries="@array/touch_key_names"
+            android:entryValues="@array/touch_key_values"
+            android:defaultValue="-1"
+            app:icon="@drawable/icon_touch_key"
+            />
+
+        <Preference
+            app:key="@string/preferences_about_axixi_key"
+            app:title="关于阿西西的日常"
+            app:icon="@drawable/icon_about_ax"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="category_export"
+        app:title="@string/preferences_category_title_export">
+        <Preference
+            app:key="@string/preferences_export_settings_key"
+            app:summary="@string/preferences_export_settings_summary"
+            app:title="@string/preferences_export_settings_title"
+            app:icon="@drawable/ic_export"/>
+
+        <Preference
+            app:key="@string/preferences_import_settings_key"
+            app:summary="@string/preferences_import_settings_summary"
+            app:title="@string/preferences_import_settings_title"
+            app:icon="@drawable/ic_import"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

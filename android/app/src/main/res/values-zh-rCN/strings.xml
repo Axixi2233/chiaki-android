@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">千秋·阿西西</string>
+    <string name="title_main">Chiaki·千秋·阿西西</string>
+    <string name="action_add_manual">手动添加控制器</string>
+    <string name="action_add_manual_save">保存</string>
+    <string name="action_connect_cancel_connect">取消</string>
+    <string name="action_connect_immediately">连接</string>
+    <string name="action_delete">删除</string>
+    <string name="action_discover">自动发现控制器</string>
+    <string name="action_edit">编辑</string>
+    <string name="action_export_settings">导出设置</string>
+    <string name="action_import_cancel">取消</string>
+    <string name="action_import_failed_ack">解除</string>
+    <string name="action_import_import">导入</string>
+    <string name="action_keep">保持</string>
+    <string name="action_login_pin_connect">连接</string>
+    <string name="action_quit_session">退出</string>
+    <string name="action_reconnect">重新连接</string>
+    <string name="action_regist">注册</string>
+    <string name="action_regist_discard">取消</string>
+    <string name="action_regist_overwrite">Overwrite</string>
+    <string name="action_register">注册控制器</string>
+    <string name="action_settings">设置</string>
+    <string name="action_share_log">分享日志</string>
+    <string name="action_wakeup">唤醒</string>
+    <string name="add_manual_regist_on_connect">在第一个连接上注册</string>
+    <string name="alert_message_delete_manual_host">你确定要删除控制器条目吗 %s?</string>
+    <string name="alert_message_delete_registered_host" formatted="false">你确定要删除 ID 为 %s 的注册控制器 %s 吗？</string>
+    <string name="alert_message_import" formatted="false">"注册主机: %s手动注册主机: %s"</string>
+    <string name="alert_message_import_failed">"无法从文件导入设置:
+%s"</string>
+    <string name="alert_message_login_pin_request">登录 PIN 码：</string>
+    <string name="alert_message_login_pin_request_incorrect">"输入的 PIN 码不正确！
+登录 PIN 码："</string>
+    <string name="alert_message_session_create_error">创建会话失败： %s</string>
+    <string name="alert_message_session_quit">会话已退出： %s</string>
+    <string name="alert_message_standby_wakeup">控制器当前处于待机模式，你想要发送唤醒数据包而不是立即尝试连接吗？</string>
+    <string name="alert_regist_duplicate">MAC 已被 %s 的控制器已注册。之前的记录应该被覆盖吗？</string>
+    <string name="alert_title_import">导入</string>
+    <string name="display_host_app_title_id" formatted="false">"App: %s
+名称 ID: %s"</string>
+    <string name="display_host_host">地址: %s</string>
+    <string name="display_host_id_registered">ID: %s (注册)</string>
+    <string name="display_host_id_unregistered">ID: %s</string>
+    <string name="display_hosts_empty_discovery_off_info">"尚未添加控制器
+启用发现以自动查找本地网络上的控制器"</string>
+    <string name="display_hosts_empty_discovery_on_info">未添加或发现任何控制器</string>
+    <string name="entered_host_invalid">请输入有效的主机名</string>
+    <string name="hint_add_manual_regist_host">注册控制器</string>
+    <string name="hint_regist_host">主机</string>
+    <string name="hint_regist_pin">PIN</string>
+    <string name="hint_regist_psn_account_id">PSN 帐户 ID（8 位 base64）</string>
+    <string name="hint_regist_psn_online_id">PSN 在线 ID（用户名，区分大小写）</string>
+    <string name="preferences_bitrate_auto">自动 (%d)</string>
+    <string name="preferences_bitrate_key">stream_bitrate</string>
+    <string name="preferences_bitrate_title">比特率</string>
+    <string name="preferences_button_haptic_enabled_key">button_haptic_enabled</string>
+    <string name="preferences_button_haptic_enabled_summary">使用手机振动马达在虚拟控制器按钮触摸时提供短暂的触觉反馈</string>
+    <string name="preferences_button_haptic_enabled_title">虚拟按钮震动反馈</string>
+    <string name="preferences_category_title_export">导出</string>
+    <string name="preferences_category_title_general">通常设置</string>
+    <string name="preferences_category_title_stream">串流</string>
+    <string name="preferences_codec_key">stream_codec</string>
+    <string name="preferences_codec_title">编解码</string>
+    <string name="preferences_codec_title_h264">H264</string>
+    <string name="preferences_codec_title_h265">H265 (仅限 PS5)</string>
+    <string name="preferences_codec_title_h265_HDR">H265_HDR (仅限 PS5)</string>
+    <string name="preferences_discovery_enabled_key">discovery_enabled</string>
+    <string name="preferences_export_settings_key">export_settings</string>
+    <string name="preferences_export_settings_summary">警告：这些生成的文件可能包含你的私人远程游玩密钥！不要分享它们。</string>
+    <string name="preferences_export_settings_title">导出设置</string>
+    <string name="preferences_fps_key">stream_fps</string>
+    <string name="preferences_fps_title">帧率</string>
+    <string name="preferences_fps_title_30">30</string>
+    <string name="preferences_fps_title_60">60</string>
+    <string name="preferences_import_settings_key">import_settings</string>
+    <string name="preferences_import_settings_summary">从 JSON 导入设置</string>
+    <string name="preferences_import_settings_title">导入设置</string>
+    <string name="preferences_log_verbose_key">log_verbose</string>
+    <string name="preferences_log_verbose_summary">警告：这会记录很多！常规游玩请勿启用。</string>
+    <string name="preferences_log_verbose_title">详细日志记录</string>
+    <string name="preferences_logs_summary">从以前的会话中收集日志文件以进行调试</string>
+    <string name="preferences_logs_title">会话日志</string>
+    <string name="preferences_motion_enabled_key">motion_enabled</string>
+    <string name="preferences_motion_enabled_summary">使用设备的陀螺仪传感器模拟控制器运动</string>
+    <string name="preferences_motion_enabled_title">陀螺仪</string>
+    <string name="preferences_on_screen_controls_enabled_key">on_screen_controls_enabled</string>
+    <string name="preferences_registered_hosts_summary">目前已注册: %d</string>
+    <string name="preferences_registered_hosts_title">注册控制器</string>
+    <string name="preferences_resolution_key">stream_resolution</string>
+    <string name="preferences_resolution_title">分辨率</string>
+    <string name="preferences_resolution_title_1080p">1080p</string>
+    <string name="preferences_resolution_title_360p">360p</string>
+    <string name="preferences_resolution_title_540p">540p</string>
+    <string name="preferences_resolution_title_720p">720p</string>
+    <string name="preferences_rumble_enabled_key">rumble_enabled</string>
+    <string name="preferences_rumble_enabled_summary">使用手机振动马达发出反馈音效，仅限PS4游戏</string>
+    <string name="preferences_rumble_enabled_title">震动反馈</string>
+    <string name="preferences_swap_cross_moon_key">swap_cross_moon</string>
+    <string name="preferences_swap_cross_moon_summary">如果默认映射不正确，则交换按钮（例如对于 8BitDo 控制器）</string>
+    <string name="preferences_swap_cross_moon_title">交换按钮</string>
+    <string name="preferences_touchpad_only_enabled_key">touchpad_only_enabled</string>
+    <string name="regist_broadcast">播送</string>
+    <string name="regist_info_failed">注册失败。</string>
+    <string name="regist_info_success">注册成功</string>
+    <string name="regist_option_ps4_ge_7">PS4 ≥ 7.0, &lt; 8</string>
+    <string name="regist_option_ps4_ge_8">PS4 ≥ 8.0</string>
+    <string name="regist_option_ps4_lt_7">PS4 &lt; 7.0</string>
+    <string name="regist_option_ps5">PS5</string>
+    <string name="regist_pin_instructions_after">获取 PIN 码</string>
+    <string name="regist_pin_instructions_ps4_before">在 PS4 上，导航至</string>
+    <string name="regist_pin_instructions_ps4_navigation">设定 →远程游玩连接设定 →添加设备</string>
+    <string name="regist_pin_instructions_ps5_before">在 PS5 上，导航至</string>
+    <string name="regist_pin_instructions_ps5_navigation">"设定 →
+系统 → 远程游玩 →
+关联设备"</string>
+    <string name="regist_pin_invalid">请输入有效的 %d 位 PIN 码</string>
+    <string name="regist_psn_account_id_help">关于获取你的帐户 ID，请参阅</string>
+    <string name="regist_psn_account_id_help_url">https://git.sr.ht/~thestr4ng3r/chiaki/tree/master/item/README.md#obtaining-your-psn-accountid</string>
+    <string name="regist_psn_account_id_invalid">请输入有效的 8 位 Base64 帐户 ID</string>
+    <string name="regist_psn_online_id_invalid">请输入有效的 PSN ID</string>
+    <string name="registered_hosts_empty_info">没有注册控制器</string>
+    <string name="session_logs_empty_info">没有记录会话日志</string>
+    <string name="title_edit_manual">手动控制器输入</string>
+    <string name="title_regist">注册控制器</string>
+    <string name="title_settings">设置</string>
+
+    <string name="preferences_on_screen_controls_enabled_title">显示虚拟控制器</string>
+    <string name="preferences_on_screen_controls_enabled_summary">显示/隐藏虚拟控制器</string>
+
+    <string name="preferences_touchpad_only_enabled_title">仅显示触摸板</string>
+    <string name="preferences_touchpad_only_enabled_summary">仅显示触摸板</string>
+
+    <string name="preferences_touch_key_enabled_key">touch_key_value</string>
+    <string name="preferences_touch_key_enabled_title">映射触控板按键</string>
+    <string name="preferences_touch_key_enabled_summary">映射一个按钮作为PS手柄触控板按键</string>
+
+    <string name="preferences_rumble_gamepad_enabled_key">rumble_gamepad_enabled</string>
+    <string name="preferences_screen_portrait_enabled_key">screen_portrait_enabled</string>
+    <string name="preferences_screen_cutoutmode_enabled_key">screen_cutoutmode_enabled</string>
+    <string name="preferences_about_axixi_key">about_axixi</string>
+
+
+</resources>
