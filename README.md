@@ -1,4 +1,4 @@
-# 主项目来自: https://git.sr.ht/~thestr4ng3r/chiaki 因github项目已停更 所以没有fork项目。
+# 主项目来自: https://git.sr.ht/~thestr4ng3r/chiaki <br>此项目是对安卓端进行的功能修改。
 
 # Chiaki Android 阿西西修改版
 1、汉化中文<br>
