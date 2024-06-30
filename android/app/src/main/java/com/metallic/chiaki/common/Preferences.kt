@@ -128,7 +128,7 @@ class Preferences(context: Context)
 		}  ?: fpsDefault
 		set(value) { sharedPreferences.edit().putString(fpsKey, value.value).apply() }
 
-	fun validateBitrate(bitrate: Int) = max(2000, min(50000, bitrate))
+	fun validateBitrate(bitrate: Int) = max(2000, min(99999, bitrate))
 	val bitrateKey get() = resources.getString(R.string.preferences_bitrate_key)
 	var bitrate
 		get() = sharedPreferences.getInt(bitrateKey, 0).let { if(it == 0) null else validateBitrate(it) }
